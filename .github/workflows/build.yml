@@ -1,0 +1,26 @@
+name: 'genpass'
+
+on:
+  push:
+    tags: ["v*"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-go@v4
+        with:
+          go-version: '1.20'
+      - uses: actions/create-release@v1
+      - env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          make
+          set -x
+          files=()
+          for f in bin/*; do
+            files+=("-a" "$f")
+          done
+          tag_name="${GITHUB_REF##*/}"
+          hub release create "${files[@]}" -m "$tag_name" "$tag_name"
