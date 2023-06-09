@@ -1,4 +1,4 @@
-name: 'genpass'
+name: genpass
 
 on:
   push:
