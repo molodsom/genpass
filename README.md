@@ -37,3 +37,7 @@
 # demo    d9p3Rpk6jXDwfWb6NgkZ
 # test    9OqCP1qI6mPcGbK0DGF8
 ```
+
+### Download
+
+[Linux](https://github.com/molodsom/genpass/releases/latest/download/genpass_linux_amd64), [Windows](https://github.com/molodsom/genpass/releases/latest/download/genpass_windows_amd64.exe), Mac OS ([Intel](https://github.com/molodsom/genpass/releases/latest/download/genpass_darwin_amd64), [M1+](https://github.com/molodsom/genpass/releases/latest/download/genpass_darwin_arm64))
