@@ -6,7 +6,7 @@
 ```
   -a    Include alphabet characters.
   -c string
-        Custom character set
+        Custom character set.
   -l int
         Length of each password. (default 20)
   -n    Include numbers.
@@ -14,7 +14,7 @@
         Number of results (will be ignored if "-u" is specified). (default 1)
   -s    Include special characters.
   -u string
-        Users (comma-separated)
+        Users (comma-separated).
 ```
 
 ### Samples

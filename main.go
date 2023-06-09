@@ -28,8 +28,8 @@ func main() {
 	hasSpecial := flag.Bool("s", false, "Include special characters.")
 	length := flag.Int("l", 20, "Length of each password.")
 	results := flag.Int("r", 1, "Number of results (will be ignored if \"-u\" is specified).")
-	chars := flag.String("c", "", "Custom character set")
-	users := flag.String("u", "", "Users (comma-separated)")
+	chars := flag.String("c", "", "Custom character set.")
+	users := flag.String("u", "", "Users (comma-separated).")
 
 	flag.Parse()
 
